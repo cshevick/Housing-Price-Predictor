@@ -1,7 +1,4 @@
-# Housing-Price-Predictor
-Machine Learning Housing Price Predictor (Python, pandas, NumPy, scikit-learn, Matplotlib, seaborn)  
-
-# Housing Price Prediction
+Machine Learning Housing Price Predictor
 
 This project predicts housing prices using a Random Forest Regression model. The data is preprocessed, and hyperparameter tuning is performed using GridSearchCV to optimize the model.
 
