@@ -1,16 +1,15 @@
-Machine Learning Housing Price Predictor
+# Housing Price Prediction
 
-This project predicts housing prices using a Random Forest Regression model. The data is preprocessed, and hyperparameter tuning is performed using GridSearchCV to optimize the model.
+This project predicts housing prices using both Linear Regression and Random Forest Regression models. The data is preprocessed, and hyperparameter tuning is performed using GridSearchCV to optimize the Random Forest model.
 
 ## Table of Contents
 
 - [Overview](#overview)
+- [Features](#features)
 - [Dataset](#dataset)
 - [Preprocessing](#preprocessing)
-- [Model](#model)
-- [Hyperparameter Tuning](#hyperparameter-tuning)
-- [Evaluation](#evaluation)
-- [Requirements](#requirements)
+- [Model Training and Evaluation](#model-training-and-evaluation)
+- [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
 - [Results](#results)
 - [Contributing](#contributing)
@@ -18,7 +17,14 @@ This project predicts housing prices using a Random Forest Regression model. The
 
 ## Overview
 
-This project aims to predict the median house values based on various features such as location, number of rooms, population, etc. The model is built using Random Forest Regression, and various preprocessing steps are applied to clean and transform the data.
+This project aims to predict the median house values based on various features such as location, number of rooms, population, etc. The models used for prediction are Linear Regression and Random Forest Regression. The Random Forest model is further optimized using hyperparameter tuning.
+
+## Features
+
+- Linear Regression model for baseline comparison.
+- Random Forest Regression model for better performance.
+- Hyperparameter tuning using GridSearchCV to optimize the Random Forest model.
+- Evaluation of models using R² score, Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE).
 
 ## Dataset
 
@@ -32,35 +38,22 @@ Preprocessing steps include:
 - Applying logarithmic transformation to skewed features.
 - Creating new features by combining existing ones.
 
-## Model
+## Model Training and Evaluation
 
-A Random Forest Regression model is used for prediction. The model is trained and evaluated using the preprocessed data.
+The following models are trained and evaluated:
+1. **Linear Regression:**
+   - Trained on the preprocessed and scaled data.
+   - Evaluated on the test set.
+2. **Random Forest Regression:**
+   - Trained on the preprocessed and scaled data.
+   - Evaluated on the test set.
+3. **Optimized Random Forest Regression:**
+   - Hyperparameter tuning using GridSearchCV.
+   - Trained and evaluated using the best parameters from the grid search.
 
-## Hyperparameter Tuning
+## Setup and Installation
 
-GridSearchCV is used to perform hyperparameter tuning. The following parameters are optimized:
-- `n_estimators`
-- `max_features`
-- `max_depth`
-- `min_samples_split`
-- `min_samples_leaf`
-- `bootstrap`
-
-## Evaluation
-
-The model is evaluated using the following metrics:
-- R² score
-- Mean Absolute Error (MAE)
-- Root Mean Squared Error (RMSE)
-
-## Requirements
-
-The project requires the following Python libraries:
-- pandas
-- numpy
-- matplotlib
-- scikit-learn
-
-You can install the required libraries using:
-```bash
-pip install pandas numpy matplotlib scikit-learn
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/housing-price-prediction.git
+   cd housing-price-prediction
