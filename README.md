@@ -30,6 +30,11 @@ This project aims to predict the median house values based on various features s
 
 The dataset used in this project is the California Housing dataset. It includes features such as `longitude`, `latitude`, `housing_median_age`, `total_rooms`, `total_bedrooms`, `population`, `households`, `median_income`, and `ocean_proximity`.
 
+**Download the dataset from the following link:**
+[California Housing Dataset](https://www.kaggle.com/datasets/camnugent/california-housing-prices)
+
+After downloading, place the `housing.csv` file in the root directory of the project.
+
 ## Preprocessing
 
 Preprocessing steps include:
