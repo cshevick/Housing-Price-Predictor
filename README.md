@@ -10,10 +10,6 @@ This project predicts housing prices using both Linear Regression and Random For
 - [Preprocessing](#preprocessing)
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
