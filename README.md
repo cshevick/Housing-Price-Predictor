@@ -52,9 +52,4 @@ The following models are trained and evaluated:
    - Hyperparameter tuning using GridSearchCV.
    - Trained and evaluated using the best parameters from the grid search.
 
-## Setup and Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/housing-price-prediction.git
-   cd housing-price-prediction
